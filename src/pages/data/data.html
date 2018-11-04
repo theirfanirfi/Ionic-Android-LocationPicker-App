@@ -1,0 +1,51 @@
+<!--
+  Generated template for the DataPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+  @name
+  @phone number
+  @age
+  @email
+  @data and time
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>DataPage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label color="primary" floating>Name</ion-label>
+    <ion-input type="text" [(ngModel)]="name" placeholder="Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email" placeholder="Email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Age</ion-label>
+    <ion-input type="number" [(ngModel)]="age" placeholder="Age"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Phone Number</ion-label>
+    <ion-input type="number" [(ngModel)]="phone" placeholder="Phone Number"></ion-input>
+  </ion-item>
+
+ 
+
+  <ion-item>
+    <ion-label color="primary" floating>Date Time</ion-label>
+    <ion-datetime displayFormat="MMM DD, YYYY HH:mm" pickerFormat="MMM DD, YYYY HH:mm" [(ngModel)]="date"></ion-datetime>
+  </ion-item>
+
+  <button ion-button full color="secondary" (click)="confirm()">Next</button>
+
+</ion-content>
